@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan~齁哩</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- end font -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <link rel="stylesheet" href="../intro/css/bootstrap.css">
+    <link rel="stylesheet" href="../intro/css/ionicons.min.css">
+    <link rel="stylesheet" href="../intro/css/magnific-popup.css">
+    <link rel="stylesheet" href="../intro/css/style.css"> -->
+
+    <!-- <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.css">
+    <script src="../bootstrap-5.1.1-dist/js/bootstrap.js"></script> -->
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div class="fakeLoader"></div>
+    <!-- end loader -->
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container">
+            <a href="loan.html" class="navbar-brand"><img src="{{ url_for('static', filename='logo.png') }}" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="icon ion-ios-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Our Team</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href=loan_pred.html">Check Your Rate</a>
+                    </li>
+                    <!-- <li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#news">News</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact us</a>
+					</li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+
+    <!-- home intro -->
+    <div id="home" class="home-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12" style="background-color: cornsilk;">
+                <!-- <div class="col-12 col-md-8"> -->
+                    <div class="content">
+                        <h2><span class="color-highlight">Provide</span> You</h2>
+                        <h2><span style="font-size: 30px;">prediction of</span><br>Loan <span
+                                class="color-highlight">Rate </span><span style="font-size: 30px;">&</span><br> Loan
+                            <span class="color-highlight">Amount </span></h2>
+                        <p>Come and Try!!!</p>
+                        <ul>
+                            <li><a href="base.html" class="button">Get Started</a></li>
+                            <!-- <li><a href="" class="button button-secondary">Free Trial</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <!-- about us -->
+                    <div id="about" class="about">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-8 col-xs-12 ml-auto" style="background-color: cornsilk;">
+                                <!-- <div class="col-6 col-md-4"> -->
+                                    <div class="content">
+                                        <h3>About Loan～齁哩</h3>
+                                        <p></p>
+                                        <p>當人們有借貸需求時，只能親自到各家銀行詢問，過程較為耗時耗力。
+                                            不易衡量真正適合自己的貸款方案，且太過頻繁的查詢也會影響個人信用。</p>
+                                        <br>
+                                        <h3>Our Goal</h3>
+                                        <ul>
+                                            <li><span class="circle-list"></span>讓有貸款需求的人，經過簡易的查詢，即可得到初步諮詢結果</li>
+                                            <li><span class="circle-list"></span>若使用者同意分享需求訊息，銀行也能由此發掘潛在客戶(或多一管道分析趨勢)</li>
+                                            <li><span class="circle-list"></span>而若多家銀行有意洽談，則使用者也可多方篩選，獲得合適的方案</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end about us -->
+                    <!-- <div class="content-image">
+                        <img src="{{ url_for('static', filename='header_loan.jpg') }}" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end home intro -->
+
+
+    <!-- about us -->
+    <!-- <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-xs-12">
+					<div class="content-image">
+						<img src="images/about-img.png" alt="">
+					</div>
+				</div>
+                <div class="col-sm-12 col-md-6 col-xs-12 ml-auto">
+                    <div class="content">
+                        <h3>About Loan～齁哩</h3>
+                        <p></p>
+                        <p>當人們有借貸需求時，只能親自到各家銀行詢問，過程較為耗時耗力。
+                            不易衡量真正適合自己的貸款方案，且太過頻繁的查詢也會影響個人信用。</p>
+                        <br>
+                        <h3>Our Goal</h3>
+                        <ul>
+                            <li><span class="circle-list"></span>讓有貸款需求的人，經過簡易的查詢，即可得到初步諮詢結果</li>
+                            <li><span class="circle-list"></span>若使用者同意分享需求訊息，銀行也能由此發掘潛在客戶(或多一管道分析趨勢)</li>
+                            <li><span class="circle-list"></span>而若多家銀行有意洽談，則使用者也可多方篩選，獲得合適的方案</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- end about us -->
+
+    <!-- process work -->
+    <!-- <div id="process-work" class="process-work section">
+        <div class="container">
+            <div class="section-title">
+                <h5 class="title-top">Process</h5>
+                <h3>About Loan～齁哩</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <i class="icon ion-ios-chatboxes"></i>
+                        <h5>成立目的</h5>
+                        <p>hi</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 align-self-end">
+                    <div class="content">
+                        <i class="icon ion-ios-cash"></i>
+                        <h5></h5>
+                        <p>hadoop is so funny</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <i class="icon ion-ios-search"></i>
+                        <h5>資料處理與分析</h5>
+                        <p>Hi how are you</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 align-self-end">
+                    <div class="content">
+                        <i class="icon ion-ios-checkmark-circle"></i>
+                        <h5>Deal</h5>
+                        <p>這裡是結果展現rrrrr</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- end process work -->
+
+
+    <!-- portfolio -->
+    <!-- <div id="portfolio" class="portfolio section-bottom-only">
+        <div class="container">
+            <div class="section-title">
+                <h5 class="title-top">Work</h5>
+                <h3>Our Team Members</h3>
+            </div>
+            <div class="row no-gutters filter-container">
+                <div class="col-md-2 col-sm-4 col-xs-10 filtr-item" data-category="3">
+                    <div class="content-image">
+                        <a href="../intro/images/portfolio1.jpg" class="portfolio-popup">
+                            <img src="{{ url_for('static', filename='portfolio1.jpg') }}" alt="portfolio-image">
+                            <div class="image-overlay"></div>
+                            <div class="image-caption">
+                                <h4>組長</h4>
+                                <span>詹于萱</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-10 filtr-item" data-category="1">
+                    <div class="content-image">
+                        <a href="../intro/images/portfolio2.jpg" class="portfolio-popup">
+                            <img src="{{ url_for('static', filename='portfolio2.jpg') }}" alt="portfolio-image">
+                            <div class="image-overlay"></div>
+                            <div class="image-caption">
+                                <h4>組員</h4>
+                                <span>林芝儀</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-10 filtr-item" data-category="2">
+                    <div class="content-image">
+                        <a href="../intro/images/portfolio3.jpg" class="portfolio-popup">
+                            <img src="{{ url_for('static', filename='portfolio3.jpg') }}" alt="portfolio-image">
+                            <div class="image-overlay"></div>
+                            <div class="image-caption">
+                                <h4>組員</h4>
+                                <span>張允謙</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-10 filtr-item" data-category="3">
+                    <div class="content-image">
+                        <a href="../intro/images/portfolio4.jpg" class="portfolio-popup">
+                            <img src="{{ url_for('static', filename='portfolio4.jpg') }}" alt="portfolio-image">
+                            <div class="image-overlay"></div>
+                            <div class="image-caption">
+                                <h4>組員</h4>
+                                <span>林逸庭</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-10 filtr-item" data-category="2">
+                    <div class="content-image">
+                        <a href="../intro/images/portfolio5.jpg" class="portfolio-popup">
+                            <img src="{{ url_for('static', filename='portfolio5.jpg') }}" alt="portfolio-image">
+                            <div class="image-overlay"></div>
+                            <div class="image-caption">
+                                <h4>組員</h4>
+                                <span>鄺晏婷</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="1">
+					<div class="content-image">
+						<a href="../images/portfolio6.jpg" class="portfolio-popup">
+							<img src="../images/portfolio6.jpg" alt="portfolio-image">
+							<div class="image-overlay"></div>
+							<div class="image-caption">
+								<h4>Blue Lolipop</h4>
+								<span>Branding</span>
+							</div>
+						</a>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div> -->
+    <!-- end portfolio -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <div class="brand"><img src="{{ url_for('static', filename='logo.png') }}" alt=""></div>
+                        <!-- <p>??????</p> -->
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <h5>About</h5>
+                        <ul>
+                            <li><a href="#about"> About us</a></li>
+                            <li><a href="https://www.iiiedu.org.tw/"> Contact</a></li>
+                            <!-- <li><a href="#portfolio"><i class="icon ion-ios-list"></i> Portfolio</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <h5>Support</h5>
+                        <ul>
+                            <!-- <li><a href=""><i class="icon ion-ios-headset"></i> support@example.com</a></li> -->
+                            <li><a href="https://www.iiiedu.org.tw/"> 02-6631-6666
+                                </a></li>
+                            <li><a href="https://www.iiiedu.org.tw/"> Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="content">
+						<h5>Follow us</h5>
+						<ul class="social">
+							<li><a href=""><i class="icon ion-logo-facebook"></i> Facebook</a></li>
+							<li><a href=""><i class="icon ion-logo-twitter"></i> Twitter</a></li>
+							<li><a href=""><i class="icon ion-logo-instagram"></i> Instagram</a></li>
+						</ul>
+					</div>
+				</div> -->
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- footer bottom -->
+    <div class="footer-bottom">
+        <span>Copyright © All Right Reserved</span>
+    </div>
+    <!-- end footer bottom -->
+
+    <!-- script -->
+    <script src="{{ url_for('static', filename='jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery.filterizr.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='magnific-popup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='contact-form.js') }}"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+    <!-- <script src="../intro/js/jquery-3.5.1.min.js"></script>
+    <script src="../intro/js/bootstrap.bundle.min.js"></script>
+    <script src="../intro/js/jquery.filterizr.min.js"></script>
+    <script src="../intro/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../intro/js/magnific-popup.min.js"></script>
+    <script src="../intro/js/contact-form.js"></script>
+    <script src="../intro/js/main.js"></script> -->
+
+</body>
+
+</html>
