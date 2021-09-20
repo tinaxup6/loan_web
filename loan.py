@@ -100,9 +100,7 @@ def form_result():
                     funded_amnt = {input_dict['funded_amnt']} \
                     WHERE id = '{time_hash}';""")
     con.commit()
-    prediction1 = input_dict['int_rate']
-    prediction2 = input_dict['funded_amnt']
-    return render_template('form_result.html', page_header = 'Prediction', prediction1 = prediction1, prediction2 = prediction2)
+    return render_template('form_result.html', page_header = 'Prediction', prediction1 = input_dict['int_rate'], prediction2 = input_dict['funded_amnt'])
 
 
 if __name__=="__main__":
