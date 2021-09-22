@@ -45,7 +45,10 @@ def form_result():
     input_var = []
     for col in input_col:
         col_var = request.form.get(f'{col}',)
-        col_float = float(col_var)
+        try:
+            col_float = float(col_var)
+        except:
+            pass
         input_var.append(col_float)
     input_dict = dict(zip(input_col, input_var))
 
@@ -121,8 +124,8 @@ def form_result():
     #     check_id = 'data error'
     # print('check_id: ', check_id)
     
-    prediction1 = fetc_dict['int_rate']
-    prediction2 = fetc_dict['funded_amnt']
+    prediction1 = round(fetc_dict['int_rate'], 2)
+    prediction2 = round(fetc_dict['funded_amnt'], 2)
     return render_template('form_result.html', page_header = 'Prediction', prediction1 = prediction1, prediction2 = prediction2)
 
 if __name__=="__main__":
