@@ -1,0 +1,1 @@
+feature = pd.concat([df['grade'],df['loan_amnt'],df['annual_inc'],df['revol_bal'],df['tot_coll_amt'],df['tot_cur_bal'],df['tot_hi_cred_lim'],df['bc_open_to_buy'],df['delinq_amnt'],df['total_bal_ex_mort']], axis = 1)
