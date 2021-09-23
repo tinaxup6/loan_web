@@ -149,7 +149,7 @@
 									</div>
 								</div>
 								<div class="form-group add_bottom_30">
-									<label>目前已抵押帳戶數量?</label>
+									<label>目前帳戶是否有抵押，數量約為?</label>
 									<div class="form-group">
 										<label for="mort_acc">Number of Mortgaged Accounts</label>
 										<input type="text" name="mort_acc" id="mort_acc" class="form-control required"
@@ -157,7 +157,7 @@
 									</div>
 								</div>
 								<div class="form-group add_bottom_30">
-									<label>曾因信用卡延遲繳款造成拒絕交易次數?</label>
+									<label>曾因信用卡延遲繳款而被拒絕交易的次數?</label>
 									<div class="form-group">
 										<label for="pub_rec">Number of Transactions Refused</label>
 										<input type="text" name="pub_rec" id="pub_rec" class="form-control required"
@@ -172,7 +172,7 @@
 								<h2 class="section_title">You're almost finish...</h2>
 								<h3 class="main_question"></h3>
 								<div class="form-group add_bottom_30">
-									<label>曾欠下債務的最高總額? (in USD)</label>
+									<label>曾欠下的最高債務金額為多少? (in USD)</label>
 									<div class="form-group">
 										<label for="tot_coll_amt">Highest Debt</label>
 										<input type="text" name="tot_coll_amt" id="tot_coll_amt"
@@ -180,7 +180,7 @@
 									</div>
 								</div>
 								<div class="form-group add_bottom_30">
-									<label>信用卡總額度? (in USD)</label>
+									<label>信用卡的總額度? (in USD)</label>
 									<div class="form-group">
 										<label for="bc_open_to_buy">Amount</label>
 										<input type="text" name="bc_open_to_buy" id="bc_open_to_buy"
@@ -188,13 +188,43 @@
 									</div>
 								</div>
 								<div class="form-group add_bottom_30">
-									<label>過去一年開戶數量?</label>
+									<label>過去一年開戶的數量?</label>
 									<div class="form-group">
 										<label for="num_tl_op_past_12m">Opened Accounts</label>
 										<input type="text" name="num_tl_op_past_12m" id="num_tl_op_past_12m"
 											class="form-control required" autocomplete="off">
 									</div>
 								</div>
+							</div>
+
+							<!-- 預測 金額 要填的資料 P. -->
+							<div class="step">
+								<h2 class="section_title">You're almost finish...</h2>
+								<h3 class="main_question"></h3>
+								<div class="form-group add_bottom_30">
+									<label>目前帳戶的總餘額? (in USD)</label>
+									<div class="form-group">
+										<label for="tot_cur_bal">Current Amount</label>
+										<input type="text" name="tot_cur_bal" id="tot_cur_bal"
+											class="form-control required" autocomplete="off">
+									</div>
+								</div>
+								<div class="form-group add_bottom_30">
+									<label>現在是否有拖欠的款項，金額為? (in USD)</label>
+									<div class="form-group">
+										<label for="delinq_amnt">Current Delinquent Amount</label>
+										<input type="text" name="delinq_amnt" id="delinq_amnt"
+											class="form-control required" autocomplete="off">
+									</div>
+								</div>
+								<!-- <div class="form-group add_bottom_30">
+									<label>過去一年開戶數量?</label>
+									<div class="form-group">
+										<label for="num_tl_op_past_12m">Opened Accounts</label>
+										<input type="text" name="num_tl_op_past_12m" id="num_tl_op_past_12m"
+											class="form-control required" autocomplete="off">
+									</div>
+								</div> -->
 							</div>
 
 							
